@@ -1,0 +1,8 @@
+RewriteEngine On
+#(RewriteEngine On) Esto va a reescrebir
+RewriteRule ^([a-z-]+)$ index.php?url=$1 [QSA,L]
+#(RewriteRule ^([a-z-]+)$ index.php?url=$1 [QSA,L]) Esta es una regla y con el signo "^" indicamos que es una expresion regular y con el parametro "([a-z-]+)$" indicamos que en toda la URL acepta solo caracteres en minusculas, despues se le indica que primero se debe dirigir al archivo index.php y despues se va a cachear del parametro url(url=$1).
+
+#Con estas dos sentencias todos los archivos se cargaran dentro del index.php
+
+
