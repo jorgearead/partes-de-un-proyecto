@@ -1,0 +1,24 @@
+:root {
+    --titulo: #dabf02;
+    --titulo2: #000;
+    --menu-fondo: #000;
+    --body-fondo: #696969;
+    --transparente: transparent;
+}
+
+body {
+    background-color: var(--menu-fondo);
+}
+
+body .header {
+    background-color: var(--transparente);
+}
+
+.head {
+    position: absolute;
+    z-index: 1;
+}
+
+.head div ul li a {
+    color: var(--titulo);
+}
